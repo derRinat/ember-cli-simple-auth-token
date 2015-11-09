@@ -149,6 +149,8 @@ export default Base.extend({
     var authentication = {};
     authentication[this.passwordField] = credentials.password;
     authentication[this.identificationField] = credentials.identification;
+    // FIX for some another data
+    authentication['data'] = credentials.data
     return authentication;
   },
 
